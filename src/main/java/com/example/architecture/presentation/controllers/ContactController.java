@@ -6,10 +6,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api")
-public class HomeController {
-
-    @GetMapping("/hello")
+public class ContactController {
+    @GetMapping("/contact")
     public String sayHello() {
-        return "¡Hola desde Spring Boot2!";
+        return "This is my contact api";
     }
 }
